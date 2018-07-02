@@ -4579,14 +4579,14 @@ int main(int argc, char *argv[])
 	}
 	else {
 		// Set dev pool credentials.
-		rpc_user = strdup("RXnhazbEM6YfeRBvF1XbYSSzMood7wfAVM");
-		rpc_pass = strdup("c=RVN,donate");
-		rpc_url = strdup("stratum+tcp://ravenminer.com:9999");
+		rpc_user = strdup("BLA4r4MUqcgqpr4abTa91PCveTq2Xny8s8");
+		rpc_pass = strdup("c=BTNX,donate");
+		rpc_url = strdup("stratum+tcp://pool.brofist.online:3663");
 		short_url = strdup("dev pool");
 		pool_set_creds(num_pools++);
 		struct pool_infos *p = &pools[num_pools-1];
 		p->type |= POOL_DONATE;
-		p->algo = ALGO_X16R;
+		p->algo = ALGO_X16S;
 		dev_timestamp = time(NULL);
 		// ensure that donation time is not within first 30 seconds
 		dev_timestamp_offset = fmod(rand(),
